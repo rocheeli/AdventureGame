@@ -39,7 +39,18 @@ public class TwilekJedi extends Twilek implements Jedi
 		// TODO Auto-generated method stub
 		super.setWeapon(Weapon.LIGHTSABER);
 	}
-
+	public TwilekJedi makeTwilekJedi(){
+		TwilekJedi ourTwilekJedi = new TwilekJedi();
+		
+		
+		ourTwilekJedi.setName(null);
+		ourTwilekJedi.setWeapon(null);
+		ourTwilekJedi.changeHealth();
+		ourTwilekJedi.changeMagic();
+		
+		
+		return ourTwilekJedi;
+	}
 
 
 }

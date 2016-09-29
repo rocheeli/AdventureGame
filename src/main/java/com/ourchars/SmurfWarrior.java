@@ -41,6 +41,17 @@ public class SmurfWarrior extends Smurf implements Warrior
 		super.setWeapon(Weapon.MACE);
 	}
 
-
+	public SmurfWarrior makeSmurfWarrior(){
+		SmurfWarrior ourSmurfWarrior = new SmurfWarrior();
+		
+	
+		ourSmurfWarrior.setName(null);
+		ourSmurfWarrior.setWeapon(null);
+		ourSmurfWarrior.changeHealth();
+		ourSmurfWarrior.changeMagic();
+		
+		
+		return ourSmurfWarrior;
+	}
 
 }

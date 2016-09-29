@@ -40,7 +40,18 @@ public class TurtleNinja extends Turtle implements Ninja
 		super.setWeapon(Weapon.NUNCHUCKS);
 	}
 
-	
+	public TurtleNinja makeTurtleNinja(){
+		TurtleNinja ourTurtleNinja = new TurtleNinja();
+		
+
+		ourTurtleNinja.setName(null);
+		ourTurtleNinja.setWeapon(null);
+		ourTurtleNinja.changeHealth();
+		ourTurtleNinja.changeMagic();
+		
+		
+		return ourTurtleNinja;
+	}
 
 }
 

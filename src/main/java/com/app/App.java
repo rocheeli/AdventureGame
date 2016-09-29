@@ -2,6 +2,8 @@ package com.app;
 
 import java.util.Scanner;
 
+import com.ourchars.ElfRoyal;
+import com.ourchars.HumanWizard;
 import com.parents.*;
 
 public class App
@@ -10,6 +12,14 @@ public class App
 	public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
+		
+		ElfRoyal ourElfRoyal = new ElfRoyal();
+        ourElfRoyal = ourElfRoyal.makeElfRoyal();
+        
+        System.out.println(ourElfRoyal.getWeapon());
+        System.out.println(ourElfRoyal.getHealth());
+        System.out.println(ourElfRoyal.getMagic());
+		
 		
 		boolean userInputCorrect = true;
 		

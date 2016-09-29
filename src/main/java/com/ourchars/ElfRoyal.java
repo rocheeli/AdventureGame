@@ -39,6 +39,18 @@ public class ElfRoyal extends Elf implements Royal
 		// TODO Auto-generated method stub
 		super.setWeapon(Weapon.SCROLL);
 	}
+	public ElfRoyal makeElfRoyal(){
+		ElfRoyal ourElfRoyal = new ElfRoyal();
+		
+	
+		ourElfRoyal.setName(null);
+		ourElfRoyal.setWeapon(null);
+		ourElfRoyal.changeHealth();
+		ourElfRoyal.changeMagic();
+		
+		
+		return ourElfRoyal;
+	}
 
 	
 
